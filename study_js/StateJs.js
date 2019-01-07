@@ -1,4 +1,5 @@
 /**
+ * State（状态）
  * Created by DingZuoQiang on 2019/1/4.
  */
 
