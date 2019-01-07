@@ -27,13 +27,15 @@ export default class App extends Component<Props> {
         <Text style={styles.welcome}>Welcome to React Native!</Text>
         <Text style={styles.instructions}>To get started, edit App.js</Text>
         <Text style={styles.instructions}>{instructions}</Text>
-        <View style={{marginBottom: 10}}>
-          <ImageComponent />
+        <View style={{marginBottom: 20}}>
+            <Text style={styles.title_s}>1、Props（属性）</Text>
+            <ImageComponent />
         </View>
         <View style={styles.marginBottom_s}>
           <ImageComponent />
         </View>
         <View style={styles.marginBottom_s}>
+            <Text style={styles.title_s}>2、State（状态）</Text>
             <BlinkApp />
         </View>
 
@@ -46,6 +48,11 @@ export default class App extends Component<Props> {
 }
 
 const styles = StyleSheet.create({
+    title_s: {
+        color: 'black',
+        fontWeight: 'bold',
+        fontSize: 25,
+    },
   container: {
     flex: 1,
     justifyContent: 'center',
