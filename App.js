@@ -11,6 +11,7 @@ import {Platform, StyleSheet, Text, View,ScrollView} from 'react-native';
 import ImageComponent from './study_js/ImageComponent';
 import BlinkApp from './study_js/StateJs'
 import LotsOfStyles from './study_js/LotsOfStyles'
+import FixedDimensionsBasics from './study_js/FixedDimensionsBasics'
 
 const instructions = Platform.select({
   ios: 'Press Cmd+R to reload,\n' + 'Cmd+D or shake for dev menu',
@@ -39,10 +40,14 @@ export default class App extends Component<Props> {
             <Text style={styles.title_s}>2、State（状态）</Text>
             <BlinkApp />
         </View>
-      <View style={styles.marginBottom_s}>
-        <Text style={styles.title_s}>3、样式</Text>
-        <LotsOfStyles />
-      </View>
+        <View style={styles.marginBottom_s}>
+            <Text style={styles.title_s}>3、样式</Text>
+            <LotsOfStyles />
+        </View>
+        <View style={styles.marginBottom_s}>
+            <Text style={styles.title_s}>4、高度与宽度</Text>
+            <FixedDimensionsBasics />
+        </View>
 
 
 
